@@ -1,0 +1,4 @@
+[submodule "tombi-configs"]
+	path = .tombi
+	url = https://github.com/ReiFan49/toml.tombi-style-parts
+	branch = generated

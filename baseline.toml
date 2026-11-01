@@ -1,0 +1,67 @@
+line-length = 128
+indent-width = 2
+
+respect-gitignore = true
+
+output-format = 'concise'
+output-prefer-rule-codes = true
+
+[lint]
+# TODO: Linter select fixing consideration.
+# Personally, it's hard to see what does the rule do from their documentation page.
+# Having to visit each of the rule to understand what actually happens without being able to see
+# all of them at once such as "E-linter page", "S-linter page (bandit)" makes it tiring to visit one by one.
+#
+# select = ['E', 'F']
+
+extend-select = [
+  'D',
+  'LOG',
+  'INP',
+  'PIE',
+  'T20',
+  'RET',
+  'SLOT',
+  'SIM',
+
+  'D213',
+  'COM812',
+]
+
+ignore = [
+  'E401',
+
+  'F403',
+  'F405',
+
+  'D100',
+  'D104',
+  'D200',
+  'D203',
+  'D204',
+  'D212',
+  'D300',
+  'D401',
+  'D415',
+
+  'PIE790',
+  'RET505',
+  'SIM115',
+]
+
+[lint.flake8-quotes]
+docstring-quotes = 'single'
+
+[lint.isort]
+section-order = [
+  'future',
+  'standard-library',
+  'third-party',
+  'first-party',
+  'local-folder',
+]
+split-on-trailing-comma = true
+
+[format]
+quote-style = 'single'
+indent-style = 'space'
