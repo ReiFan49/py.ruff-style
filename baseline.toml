@@ -47,6 +47,9 @@ ignore = [
   'PIE790',
   'RET505',
   'SIM115',
+  'RUF022',
+
+  'FURB167',
 ]
 
 [lint.flake8-quotes]

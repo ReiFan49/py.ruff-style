@@ -122,6 +122,18 @@ Advanced file handling cannot make use of context-based file handler.
 
 Disabled Linters: `SIM115`.
 
+### ruff.unsorted-dunder-all
+
+Having `__all__` readable is more important than being forced to sort them alphanumerically.
+
+Disabled Linters: `RUF022`.
+
+### refurb.regex-flag-alias
+
+Regex Shorthand Flag usage are recommended rather than discouraged.
+
+Disabled Linters: `FURB167`.
+
 ### format.quote-style
 
 Project string quotation prefers the use of **single quotes** whenever possible.
@@ -129,3 +141,4 @@ Project string quotation prefers the use of **single quotes** whenever possible.
 ### format.indent-style
 
 Project indentation uses **2-width spaces**.
+
