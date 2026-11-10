@@ -7,15 +7,4 @@ on:
 
 jobs:
   lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v6
-      with:
-        submodules: true
-    - uses: tombi-toml/setup-tombi@v1.9.7
-    - name: Validate Files
-      run: tombi lint --diagnostics-format github
-    - name: Self-Consistency Lint
-      run: tombi format --check --diff --diagnostics-format github
+    uses: ReiFan49/local-action-build/.github/workflows/lint-toml-tombi.yml@master
